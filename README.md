@@ -7,7 +7,7 @@ The symptoms are swelling, blurness etc.
 unfortunately this disease is irreversible - It cannot be cured if it is not detected at the mild stage!
 The doctor has to analyse the fundus images of the patient taken by technician, 
 all the prominent features or symptoms may not be clearly visible at mild stage which makes it difficult to diagnose it at mild stage
-So using automatic tools to detect it using deep learning is proposed which will take fundus image as input ans classifies it into five class(stages of diabetic retinopathy)-
+So using automatic tools to detect it using deep learning is proposed which will take fundus image as input and classifies it into five class(stages of diabetic retinopathy)-
 1. Mild
 2. Moderate
 3. Proliferate
