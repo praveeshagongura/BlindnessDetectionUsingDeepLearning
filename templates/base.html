@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>BLINDNESS DETECTION USING DEEP LEARNING</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{url_for('static',filename='css/main.css') }}" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link href="{{url_for('static',filename='vendor/animate.css/animate.min.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"
+    type="text/css">
+  <link href="{{url_for('static',filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet"
+    type="text/css">
+  <link href="{{url_for('static',filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static',filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
+    type="text/css">
+  <link href="{{url_for('static',filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet"
+    type="text/css">
+  <link href="{{url_for('static',filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{url_for('static',filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Bootstrap CDN JS Links -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="{{ url_for('index') }}">BLINDNESS DETECTION USING DEEP LEARNING</a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="{{ url_for('index') }}">Home</a></li>
+          <li><a class="nav-link scrollto " href="{{ url_for('predict') }}">Predict</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to Blindness Detection</h1>
+      <h4 style="color: #2C4964">Upload your fundus image and get diagnosed!</h4>
+      <a href="{{url_for('predict')}}" class="btn-get-started scrollto">
+        Get Started
+      </a>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us ">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex align-items-stretch">
+            <div class="content z-index-1">
+              <h1>Diabetic Retinopathy </h1>
+              <p class="line-height">Diabetic Retinopathy is a condition that occurs as a result of damage to the blood
+                vessles of the
+                retina in the people who have diabetes. It is a potentiallly serious eye disease that can result in
+                permanent distorted vision or loss of vision.
+                While you may start out with only mild vision problems, you can eventually lose your sight
+              </p>
+              <h1>Why choose us?</h1>
+              <p class="line-height">
+                Our network has shown promising signs of being able to learn the features required to classify the
+                fundus images, accurately classifying the majority of proliferative cases and cases with no Diabetic
+                Retinopathy. The potential benefit of using our trained CNN is that it can classify thousands of images
+                every minute allowing it to be used in real-time whenever a new image is acquired. In practice images
+                are sent to clinicians for grading and not accurately graded when the patient is in for screening. The
+                trained CNN makes a quick diagnosis and instant response to a patient possible. The network also
+                achieved these results with only one image per eye.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 d-flex align-items-stretch mg-t-30">
+          <div class="icon-boxes d-flex flex-column justify-content-center">
+            <div class="row">
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <h3 class="cards">Symptoms</h3>
+                  <ul class="black">
+                    <li >An increased number of eye floaters</li>
+                    <li >Blurry vision</li>
+                    <li >distorted vision</li>
+                    <li >poor night vision</li>
+                    <li >loss of vision</li>
+                    <li >decreased field of vision</li>
+                    <li >change in colors</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch black">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <h4 class="cards">When to see a doctor?</h4>
+                  <p class="black">If you have diabetes, make an appointment to see an eye care specialist such as an ophthalmologist
+                    at least once a year, or as often as your doctor recommends.</p>
+                  <p class="black">You should also see your doctor if your glucose level remains high despite medication and other
+                    changes, or if you notice any changes in vision, even if they are subtle.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <h4 class="cards">Risk factors</h4>
+                  <ul class="black">
+                    <li >Having diabetes for a long time </li>
+                    <li >Poor control of your blood sugar level</li>
+                    <li >High blood pressure</li>
+                    <li >High cholesterol</li>
+                    <li >Pregnancy</li>
+                    <li >Tobacco use</li>
+                    <li >Being Black, Hispanic or Native American</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div><!-- End .content-->
+        </div>
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <section class="tabs-section text-white pd-0  ">
+      <div class="container">
+        <div class="section-title">
+          <h2>Prediction</h2>
+          <p class="title black">We will classify the image provided by you into the following classes</p>
+        </div>
+        <div class="row nb-5">
+          <div class="col-sm-5 col-lg-3">
+            <ul class="nav nav-tabs flex-column mb-3">
+              <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Mild</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-2">Moderate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-3">No Diabetic Retinopathy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-4">Proliferate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-5">Severe</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-7 col-lg-9">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details">
+                    <h3 class="mt-3">Mild</h3>
+                    <p class="fst-italic black">This is the earliest stage of diabetic retinopathy, characterized by tiny
+                      areas of swelling in the blood vessels of the retina. These areas of swelling are known as micro
+                      aneurysms.</p>
+                    <p class="fst-italic black">Small amounts of fluid can leak into the retina at the stage, triggering swelling of the macula.
+                      This is an area near the center of the retina.</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{{url_for('static',filename='img/mild.png')}}" alt="" class="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details">
+                    <h3 class="mt-3">Moderate</h3>
+                    <p class="fst-italic black">Increased swelling of tiny blood vessels starts to interfere with blood flow
+                      to the retina, preventing proper nourishment. This causes an accumulation of blood and other
+                      fluids in the macula.</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{{url_for('static',filename='img/moderate.png')}}" alt="" class="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details">
+                    <h3 class="mt-3">No Diabetic Retinopathy</h3>
+                    <p class="fst-italic black" >No Diabetic Retinopathy - Eye is free from swellings, accumulations, exudates and hemorrhages</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{{url_for('static',filename='img/nodr.png')}}" alt="" class="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details">
+                    <h3 class="mt-3">Proliferate_DR</h3>
+                    <p class="fst-italic black">This is an advanced stage of the disease, in which new blood vessels form in
+                      the retina. Since these blood vessels are often fragile, there’s a higher risk of fluid leakage.
+                      This triggers different vision problems such as blurriness, reduced field of vision, and even
+                      blindness.</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{{url_for('static',filename='img/proliferate.png')}}" alt="" class="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+
+                  <div class="col-lg-8 details">
+                    <h3 class="mt-3">Severe</h3>
+                    <p class="fst-italic black">A larger section of blood vessels in the retina become blocked, causing a
+                      significant decrease in blood flow to this area. At this point, the body receives signals to start
+                      growing new blood vessels in the retina.</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{{url_for('static',filename='img/severe.png')}}" alt="" class="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <script href="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script href="{{url_for('static',filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script href="{{url_for('static',filename='vendor/swiper/swiper-bundle.min.css') }}"></script>
+    <script href="{{url_for('static',filename='vendor/purecounter/purecounter.js') }}"></script>
+    <script href="{{url_for('static',filename='vendor/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script href="{{url_for('static',filename='js/main.js') }}"></script>
+</body>
+
+</html>
