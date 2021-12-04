@@ -36,7 +36,7 @@ template folder - consists of hmtl files
 ![3](https://user-images.githubusercontent.com/66114853/144719849-dddd2296-b74b-4103-8269-bad818ad3eb9.PNG)
 
 
-### Screenshots of tool I have developed -
+### Screenshots of tool developed -
 The below is the Home page - This page includes the Risk factors, Symptoms, When to visit a doctor and information about five classes
 
 ![home page](https://user-images.githubusercontent.com/66114853/144719894-20d1b254-206c-478b-a946-7ea82b460fac.PNG)
