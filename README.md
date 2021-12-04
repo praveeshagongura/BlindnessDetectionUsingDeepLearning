@@ -1,4 +1,5 @@
-# BlindnessDetectionUsingDeepLearning
+![1](https://user-images.githubusercontent.com/66114853/144719617-56b204c8-c477-4286-a0b3-af154be40589.PNG)
+# Blindness Detection Using Deep Learning
 
 Blindness here referring to DiabeticRetinopathy detection
 People suffer from diabetes are likely to have this disease.
@@ -15,6 +16,7 @@ train.csv - labeling of images
 static folder - consists of css and js files
 template folder - consists of hmtl files
 
+
 The architecture used here is RESNET18
-Model summary is shown below- 
+
 
