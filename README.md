@@ -7,7 +7,12 @@ The symptoms are swelling, blurness etc.
 unfortunately this disease is irreversible - It cannot be cured if it is not detected at the mild stage!
 The doctor has to analyse the fundus images of the patient taken by technician, 
 all the prominent features or symptoms may not be clearly visible at mild stage which makes it difficult to diagnose it at mild stage
-So using automatic tools to detect it using deep learning is proposed.
+So using automatic tools to detect it using deep learning is proposed which will take fundus image as input ans classifies it into five class(stages of diabetic retinopathy)-
+1.Mild
+2.Moderate
+3.Proliferate
+4.Severe
+5.No diabetic retinopathy
 
 ### This repository consists of -
 app.py - deployment code
@@ -33,8 +38,10 @@ The architecture used here is RESNET18
 
 ### Screenshots of tool I have developed -
 The below is the Home page - This page includes the Risk factors, Symptoms, When to visit a doctor and information about five classes
+
 ![home page](https://user-images.githubusercontent.com/66114853/144719894-20d1b254-206c-478b-a946-7ea82b460fac.PNG)
 
 
 The below is Predict page - The user has to upload a fundus image and the diagnosis will be displayed
+
 ![predictt](https://user-images.githubusercontent.com/66114853/144719978-928f44b5-c5f9-4e81-8268-c581f5817a6e.PNG)
