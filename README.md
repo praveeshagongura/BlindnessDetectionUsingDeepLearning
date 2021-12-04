@@ -40,6 +40,8 @@ template folder - consists of hmtl files
 The below is the Home page - This page includes the Risk factors, Symptoms, When to visit a doctor and information about five classes
 
 ![home page](https://user-images.githubusercontent.com/66114853/144719894-20d1b254-206c-478b-a946-7ea82b460fac.PNG)
+![home2](https://user-images.githubusercontent.com/66114853/144720679-da07533c-44cc-4779-8011-76833f15d2cc.PNG)
+![home3](https://user-images.githubusercontent.com/66114853/144720687-d85db36d-1b64-40ad-93fe-3bf541cf5cfd.PNG)
 
 
 The below is Predict page - The user has to upload a fundus image and the diagnosis will be displayed
