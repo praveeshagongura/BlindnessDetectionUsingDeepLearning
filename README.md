@@ -30,7 +30,7 @@ template folder - consists of hmtl files
 
 
 ### The architecture used here is RESNET18
-### The Model Summary is shown below -
+### The sample of model summary is shown below -
 ![1](https://user-images.githubusercontent.com/66114853/144719617-56b204c8-c477-4286-a0b3-af154be40589.PNG)
 ![2](https://user-images.githubusercontent.com/66114853/144719842-e7b3c478-25fb-4331-892b-5d718e4b8047.PNG)
 ![3](https://user-images.githubusercontent.com/66114853/144719849-dddd2296-b74b-4103-8269-bad818ad3eb9.PNG)
